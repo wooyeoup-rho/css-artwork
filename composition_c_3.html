@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composition No. III</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .painting {
+            display: grid;
+            background-color: #000;
+            gap: 30px;
+            grid-template-columns: 120px 340px 300px 310px;
+            grid-template-rows: 0px 100px 500px 130px 220px 80px;
+        }
+
+        .red {
+            background-color: #E72F24;
+        }
+
+        .blue {
+            background-color: #004592;
+        }
+
+        .yellow {
+            background-color: #F9D01E;
+        }
+        
+        .white {
+            background-color: #F0F1EC;
+        }
+
+        .black {
+            background-color: #000;
+        }
+
+        .column-span-2 {
+            grid-column: span 2;
+        }
+
+        .row-span-2 {
+            grid-row: span 2;
+        }
+
+        .row-span-3 {
+            grid-row: span 3;
+        }
+
+        .yellow-area {
+            grid-row-start: 5;
+            grid-column-start: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="painting">
+            <div class="red column-span-2 row-span-2"></div>
+            <div class="black"></div>
+            <div class="white row-span-3"></div>
+            <div class="white row-span-2"></div>
+            <div class="white column-span-2"></div>
+            <div class="white row-span-3"></div>
+            <div class="black"></div>
+            <div class="yellow yellow-area"></div>
+            <div class="white row-span-2"></div>
+            <div class="blue row-span-3"></div>
+            <div class="white column-span-2"></div>
+        </div>
+    </div>
+</body>
+</html>

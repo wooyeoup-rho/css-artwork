@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composition No. III, with Red, Blue, Yellow, and Black</title>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .painting {
+      background-color: #000;
+      display: grid;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 20px;
+      gap: 9px;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white {
+      background-color: #F0F1EC;
+    }
+
+    .blue {
+      background-color: #004592;
+      border-bottom: 1px solid black;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+
+    .a1 {
+      grid-column: span 3;
+    }
+
+    .a2 {
+      grid-row: span 2;
+    }
+
+    .a3 {
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+      <div class="painting">
+        <div class="red"></div>
+        <div class="white a1"></div>
+        <div class="white a2"></div>
+        <div class="white a3"></div>
+        <div class="blue"></div>
+        <div class="white a2"></div>
+        <div class="white"></div>
+        <div class="yellow"></div>
+        <div class="black"></div>
+    </div>
+   </div>
+
+</body>
+
+</html>
